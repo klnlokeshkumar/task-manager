@@ -61,3 +61,13 @@ Task Manager Web App
 -   200 request success
 -   404 page not found
 -   install mongoose and dotenv to use the .env file values
+-   use seperation of concerns to make sure db schema and model file is seperated from the server.js
+-   connectonDB is preffered to be in the server.js as it may be simplified
+-   first connect to the db and only start the server
+-   while post request establishment is done
+
+    done it either by middleware using next fun
+    or do it using express module
+
+-   importing task model is used to do CRUD operations on the database
+-
