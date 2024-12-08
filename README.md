@@ -70,4 +70,9 @@ Task Manager Web App
     or do it using express module
 
 -   importing task model is used to do CRUD operations on the database
+-   create a `.env` file to store environment variables such as database connection strings
+-   use `process.env.VARIABLE_NAME` to access these variables in your code
+-   set up Mongoose schemas and models to define the structure of your data
+-   create routes for handling different HTTP requests (GET, POST, PUT, DELETE)
+-   use Express middleware for error handling and logging
 -
