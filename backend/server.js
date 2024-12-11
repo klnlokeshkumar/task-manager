@@ -10,7 +10,14 @@ const app = express();
 // Middleware
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
-app.use(cors({ origin: ["http://localhost:1234", ""] }));
+app.use(
+    cors({
+        origin: [
+            "http://localhost:1234",
+            "https://task-manager-frontend-oj8x.onrender.com/",
+        ],
+    })
+);
 app.use("/api/tasks", taskRoutes);
 
 // Routes
