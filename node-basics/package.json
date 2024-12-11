@@ -1,0 +1,20 @@
+{
+    "name": "basics",
+    "version": "1.0.0",
+    "description": "-   global is the object containing fucntions all round the environment\r -   setInterval(callback fun, time interval to repeat the callback fun)\r -   to stop the execution of the setInterval use setTimeout with clearInterval as a callback fun\r -   \\_\\_dirname and \\_\\_filename\r -   modules are encapsulated code that is to import and use in another code block - simply a js file\r -   default is the commonjs module using require function and parameter as the file location\r -   top level code in module will be executed and modeul.exports is assigned to the varibale where the require fucntion is called\r -   module.exports = variable/fun\r -   module.exports = {\r     name1: name1\r     or\r     name1,\r     name2,\r     }\r -   Core modules are predefined inside nodejs\r -   os module contains the details of the operating system\r -   path is another such package\r -   to make a server we need http module - core module\r -   http.createServer(callback fun)\r     callback fun takes in req, res\r -   now listen to the server by defining the port and hostname finally a call back fun\r -   req is a ver big object\r -   create routes inside the createServer callback fun\r -   use res properties to decide what to do on which route\r -   res.url will tell the path of the page requested\r -   res.setHeader will display the text/html and Content-Type\r -   res.write will implement the html code written inside this write function call",
+    "main": "express-server.js",
+    "scripts": {
+        "start": "node express-server.js",
+        "backend": "nodemon express-server.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "express": "^4.21.2"
+    },
+    "devDependencies": {
+        "nodemon": "^3.1.7"
+    }
+}
